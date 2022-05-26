@@ -1,110 +1,113 @@
- 
+:root :{
+    --dark-colour: rgb(43, 49, 47);
+    --font-white: aliceblue;
+    
+    }
  
  /* header */
  
- @media(min-width: 760px) {
-    
-    
-    
+ @media(min-width: 760px) {   
 .container-1{
     display: flex;
-    }
+}
     
 .container-1 section {
-    border: 1px solid;
+    /* border: 1px solid; */
     padding: 10px;
-    height: 3rem;
+    height: 3.5rem;
+    flex-direction: row;
 }
 
-.box-1 {
+ } /*end of header media query*/
+
+
+.nav {
     flex: 3;
     text-align: center;
+    background-color: rgb(43, 49, 47);
+    color: aliceblue;
+    font-size: 2rem;
+    
+    }
 
- }
- 
-.box-2 {
-   flex: 3;
-   text-align: center;
-
+a {
+    text-decoration: none;
+    color: aliceblue;
 }
-
-.box-3 {
-    flex: 1;
-      
-}
-
-.box-4 {
-    flex: 1; 
-}
-
-.box-5 {
-    flex: 1;
-}
-
 
 /* about me */
 
-.container-2 {
+@media(min-width: 760px){
+.about-me-container {
     display: flex;
     justify-content: space-around;
+    height: 25rem;
+    background-color: rgba(7, 106, 7, 0.673);
+   
 }
 
-.container-2 section{
-    border: 1px solid;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    flex: wrap;
+.about-me-container section{
+    flex-direction: row;
+  
+
+
 }
-
-
-.container-2 h3, p  {
-    border: 1px solid;
+.about-me-header {
+    flex: 1;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 300;
+    color: white;
     
+}
+
+.about-me-text {
+    flex: 1;
+    width: 40%;
+    color: white;
+ 
 }
 
 .about-me-image {
   
     width: 30%; 
-    /* align-content: center; */
-}
-
-@media(max-width: 760px) {.about-me-image { margin-left: 35%;}
+    flex: 1;
     
-}
 
-.about-me-header {
-    width: 100%;
-    text-align: center;
-}
+}}
 
-.about.me.text {
-    width: 40%;
-   
-}
+
+
 
 /* work */
 
 
 .container-work {
     display: flex;
+    background-color: rgb(43, 49, 47);
 }
 
 .container-work h3 {
-    border: 1px solid;
-    height: 1rem;
+    
+    height: 3rem;
     justify-content: center;
     flex-basis: 100%;
     text-align: center;
+    font-size: 2rem;
+    padding-top: 5px;
+    color: aliceblue;
+    
 }
 
 .JFOM {
   align-items: center;
+  background-image: url(/assets/images/Woodgrain.webp);
 }
 
 .jfom-image {
     width: 60%;
-    margin-left: 20%;     
+    margin-left: 20%;  
+    background-image: url(/assets/images/Woodgrain.webp);   
 }
 
 .image-area{
@@ -112,7 +115,8 @@
  flex-wrap: wrap;
  flex-direction: row;
  justify-content: center;
-
+ 
+ background-image: url(/assets/images/Woodgrain.webp);
 }
 
 .img-box {
@@ -142,19 +146,34 @@ img:hover {
 }
  
  /* contact */
- 
-.contact {
+ .contact article{
+     height: 6rem;
+    
+
+     
+ }
+
+
+
+.contact-area {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
+    background-color: pink;
+    
+    
 }
  
- 
- 
- 
- 
- 
+.contact-header{
+    flex: 1;
+    
+}
+
+.contact-list{
+    flex: 1;
+}
+.formbox{
+    flex: 1;
+}
+    
  
  
  

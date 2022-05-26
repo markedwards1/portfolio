@@ -25,35 +25,42 @@
 <body>
 
 
-    
+
     <header class="container-1">
 
-        <section class="box-1">
+        <section class="nav">
             <h3>Mark Edwards</h3>
         </section>
 
-        <section class="box-2">
+        <section class="nav">
             <h3>Web Developer</h3>
         </section>
-        
-        <section class="box-3">
-            <h3>about</h3>
+
+        <section class="nav">
+            <a href="#about">About</a>
         </section>
-        <section class="box-4">
-            <h3>work</h3>
+        <section class="nav">
+            <h3>Work</h3>
         </section>
-        <section class="box-5">
-            <h3>contact</h3>
+        <section class="nav">
+            <h3><a href="#contact">Contact</a></h3>
         </section>
 
 
     </header>
+    
 
-    <section class="container-2">
+    <section class="about-me-container">
+        
         <img class="about-me-image" src="/assets/images/monaco.jpg" alt="image of mark edwards">
         <h3 class="about-me-header">About Me</h3>
-        <p class="about-me-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis alias asperiores vero sit ad accusamus quas, sequi repudiandae! Aliquid dolorum minus exercitationem, officiis voluptatibus provident vero ullam ea quaerat voluptas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia aliquid magni minus corporis repellat mollitia perspiciatis rem fugit, omnis, eligendi dolorum obcaecati temporibus odio facere hic quam animi voluptates exercitationem.</p>
+        <p class="about-me-text">Currently working a JH Managment group, I am working to maintain and develop four wordpress sites. My interest in Web Development started when I decided to change carriers and interest in working more creatively and with online content. What also interests me is the continual learning involved with web development. In my private life I like to travel, walk my pomeranian, and play guitar and piano. </p>
+    
+    
     </section>
+
+
+
 
     <section class="container-work">
         <h3>Work</h3>
@@ -67,28 +74,32 @@
 
     <section class="work-2">
         <div class="image-area">
-        <img class="img-box" src="/assets/images/Trevors.png" alt="imgage trevors landing">
-        <img class="img-box" src="/assets/images/WA Carpet Supermarket.png" alt="imgage carpet supermaket landing">
-        <img class="img-box img-box3" src="/assets/images/Google.png" alt="imgage google landing page">
+            <img class="img-box" src="/assets/images/Trevors.png" alt="imgage trevors landing">
+            <img class="img-box" src="/assets/images/WA Carpet Supermarket.png" alt="imgage carpet supermaket landing">
+            <img class="img-box img-box3" src="/assets/images/Google.png" alt="imgage google landing page">
 
-    </div>
+        </div>
     </section>
 
+<div id="contact"></div>
+
+
     <section class="contact">
-        <h3>contact</h3>
-        <ol>
-            
+        <article class="contact-area">
+        <h3 class="contact-header">contact</h3>
+        <ol class="contact-list">
+
             <li>Email : mark.francis.edwards@gmail.com</li>
             <li>gitHub : https://github.com/markedwards1</li>
         </ol>
 
-        <form action="Contact">
+        <form class="formbox" action="Contact">
             <input type="text" name="Name" placeholder="Name">
             <input type="text" name="Email" id="name" placeholder="email">
-            <input type="text" name="comment" placeholder="comment">
+            <input class="comment-box" type="text" name="comment" placeholder="comment">
 
         </form>
-
+    </article>
 
 
     </section>
@@ -98,4 +109,4 @@
 
 
 
-</div>
+    </div>
