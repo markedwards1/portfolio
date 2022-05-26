@@ -1,34 +1,56 @@
-:root :{
-    --dark-colour: rgb(43, 49, 47);
-    --font-white: aliceblue;
-    
-    }
- 
- /* header */
- 
- @media(min-width: 760px) {   
-.container-1{
+
+
+
+/*nav bar*/
+.container-1{  
     display: flex;
 }
-    
-.container-1 section {
-    /* border: 1px solid; */
-    padding: 10px;
-    height: 3.5rem;
-    flex-direction: row;
+ /* about me   */
+.container-2{
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 128, 0, 0.386);    
+}
+/* work section*/
+.container-work {
+    display: flex;
+    background-color: rgb(43, 49, 47);
 }
 
- } /*end of header media query*/
 
+/* footer*/
+.contact-area {
+    display: flex;
+    background-color: pink;
+    
+    
+}
 
-.nav {
-    flex: 3;
-    text-align: center;
+.container-1 header {
+    
+    padding: 10px;
+  
+    }
+
+.nav1 {
+    height: 3.5rem;
+    flex: 1;
     background-color: rgb(43, 49, 47);
     color: aliceblue;
     font-size: 2rem;
     
+    
     }
+
+.nav2 {
+    height: 3.5rem;
+    flex: 2;
+    background-color: rgb(43, 49, 47);
+    color: aliceblue;
+    font-size: 2rem;
+    
+    }  
+
 
 a {
     text-decoration: none;
@@ -37,55 +59,52 @@ a {
 
 /* about me */
 
-@media(min-width: 760px){
-.about-me-container {
-    display: flex;
-    justify-content: space-around;
-    height: 25rem;
-    background-color: rgba(7, 106, 7, 0.673);
-   
+.container-2 div{
+    border: 1px aliceblue;
 }
 
-.about-me-container section{
-    flex-direction: row;
-  
 
+
+.about-me-image{
+    width: auto;
+    height: 20rem;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.about-me-header{
+    margin:50px;
+    font-size: 3rem;
 
 }
-.about-me-header {
+
+.about-me-text{
+    margin: 20px;
+    pad
+
+}
+.container-2-box1{
+    flex: 2;
+    
+    
+}
+.container-2-box2{
     flex: 1;
-    text-align: center;
-    font-size: 2rem;
-    font-weight: 300;
-    color: white;
+    margin: 20px;
+    
+    
+    font-size: 3rem;
     
 }
 
-.about-me-text {
+.container-2-box3{
     flex: 1;
-    width: 40%;
-    color: white;
- 
 }
-
-.about-me-image {
-  
-    width: 30%; 
-    flex: 1;
-    
-
-}}
-
-
-
 
 /* work */
 
 
-.container-work {
-    display: flex;
-    background-color: rgb(43, 49, 47);
-}
+
 
 .container-work h3 {
     
@@ -111,7 +130,7 @@ a {
 }
 
 .image-area{
- display: flex;
+ /* display: flex; */
  flex-wrap: wrap;
  flex-direction: row;
  justify-content: center;
@@ -120,19 +139,23 @@ a {
 }
 
 .img-box {
+    
     width: 30%;
-
     padding: 0 20px 20px;
+
    
 }
 
 .img-box2 {
+    
     width:30%;
   
 }
 
 .img-box3 {
+  
     width:30%;
+    
     
    ;
     /* border: solid 1px; */
@@ -147,7 +170,7 @@ img:hover {
  
  /* contact */
  .contact article{
-     height: 6rem;
+     height: 8rem;
     
 
      
@@ -155,25 +178,59 @@ img:hover {
 
 
 
-.contact-area {
-    display: flex;
-    background-color: pink;
-    
-    
-}
+
  
 .contact-header{
     flex: 1;
+    margin: 1.5rem;
     
 }
 
 .contact-list{
     flex: 1;
+    margin: 1rem;
 }
 .formbox{
     flex: 1;
+    margin: 1rem;
+
 }
+
+.comment-box {
+    height: 3rem;
     
- 
- 
- 
+
+}
+
+@media screen and (max-width: 768px){
+    .container-1{
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(43, 49, 47);
+    }
+    .container-2{
+        flex-direction: column;
+    }
+
+    .container-work {
+        flex-direction: column;
+    }
+
+
+    .contact-area {
+        flex-direction: column;
+        background-color: pink;
+       
+
+    }
+    .contact article{
+        height: 14rem;
+       
+   
+        
+    }
+
+
+
+
+}
