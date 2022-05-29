@@ -118,13 +118,13 @@ a {
 
 .jfom {
   align-items: center;
-  background-image: url('./images/woodgrain.jpg');
+  background-image: url('/assets/woodgrain.jpg');
 }
 
 .jfom-image {
     width: 60%;
     margin-left: 20%;  
-    background-image: url('./images/woodgrain.jpg');
+    background-image: url('/assets/woodgrain.jpg');
 }
 
 .image-area{
@@ -133,7 +133,7 @@ a {
  flex-direction: row;
  justify-content: center;
  
- background-image: url('./images/woodgrain.jpg');
+ background-image: url('/assets/woodgrain.jpg');
 }
 
 .img-box {
